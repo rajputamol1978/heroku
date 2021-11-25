@@ -1,12 +1,9 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Question page
+  Sign In page
 {% endblock %}
 
-{% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
-{% endblock %}
 
 {% block content %}
 
@@ -19,17 +16,17 @@
 
        <div class="govuk-form-group">
   			<label class="govuk-label" for="width-20">
-    			20 character width
+    			Username
  			</label>
 		   	<div id="username-hint" class="govuk-hint">
     		This would be your email address
   			</div>
  			 <input class="govuk-input govuk-input--width-20" id="username" name="width-20" type="text">
 	   </div>
-		
-		<div class="govuk-form-group"> 
-			<label for="password" class="govuk-label">Password</label> 
-        <input type="password" name="password" id="password" class="govuk-input govuk-input--width-20" autocomplete="current-password"> 
+
+		<div class="govuk-form-group">
+			<label for="password" class="govuk-label">Password</label>
+        <input type="password" name="password" id="password" class="govuk-input govuk-input--width-20" autocomplete="current-password">
        </div>
 
         <button class="govuk-button" data-module="govuk-button">Sign In</button>
